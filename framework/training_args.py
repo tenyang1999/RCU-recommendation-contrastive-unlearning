@@ -26,12 +26,10 @@ def parse_args():
     # Data
     parser.add_argument('--data_dir', type=str, default='./data',
                         help='data dir')
-    parser.add_argument('--df', type=str, default='high',
-                        help='Df set to use: high degrees users or low degrees users, ["high", "low", "random"]')
+    parser.add_argument('--df', type=str, default='high_user',
+                        help='Df set to use: high degrees users or low degrees users, ["high_user", "low_user", "random"]')
     parser.add_argument('--df_node', type=str, default=False,
-                        help='data deleted users or edges') 
-    parser.add_argument('--df_target', type=str, default=False,
-                        help='data deleted users or items') 
+                        help='data deleted nodes or edges') 
     
     parser.add_argument('--df_idx', type=str, default='none',
                         help='indices of data to be deleted')
