@@ -34,10 +34,10 @@ The first step is to train the original GNN model:  ''' python train_gnn.py'''
 After that, you can use different arguments for various unlearning tasks and experiments.
 
 For example, if you want to unlearn 10% of high-degree users' edges in Douban, you can...
-'''
+```
 python delete_gnn.py --dataset Douban --gnn LightGCN --df high_user --df_size 10 --unlearning_model RecUn
-'''
+```
 else if you want to unlearn 10% of high-degree users' nodes in MovieLens100K, you can...
-'''
+```
 python delete_gnn.py --dataset MovieLens100K --gnn LightGCN --df high_user --df_size 10 --df_node True --unlearning_model RecUn
-'''
+```
