@@ -29,7 +29,7 @@ pip install torch-cluster==1.6.1+pt113cu117
 ## Experimental setups-
 To assess the trilemma of privacy, utility, and efficiency, we evaluate utility using three metrics: Precision@10 (P), Recall@10 (R), and NDCG@10 (N). For privacy, we compare the forgotten set with a randomly selected remaining set, assigning labels of 0 and 1, respectively, and calculate AUC and AUP to measure unlearning performance. Efficiency is measured by training time.
 
-The first step is to train the original GNN model:  ''' python train_gnn.py'''
+The first step is to train the original GNN model:  ``` python train_gnn.py```
 
 After that, you can use different arguments for various unlearning tasks and experiments.
 
